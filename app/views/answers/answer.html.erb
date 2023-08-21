@@ -1,0 +1,29 @@
+<h1> Stupid Coaching </h1>
+
+<div class="container">
+  <div class="question">
+    <div>
+    <%=
+      "#{params[:question]}"
+    %>
+    </div>
+    <div>
+       -You
+    </div>
+  </div>
+
+  <div class="answer">
+    <div>
+    <%=
+      " #{answer}"
+    %>
+    </div>
+    <div>
+       -Your coach
+    </div>
+  </div>
+
+  <div class="btn-back-ask">
+    <%= link_to "ask", ask_path %>
+  </div>
+</div>
